@@ -13,8 +13,8 @@ const rootTypes = gql`
 
 const customTypes = gql`
   type User {
-    #firstName: String! @deprecated(reason: "We join in name")
-    #lastName: String! @deprecated(reason: "We join in name")
+    firstName: String! @deprecated(reason: "We join in name")
+    lastName: String! @deprecated(reason: "We join in name")
     name: String!
     email: String!
     id: ID!
