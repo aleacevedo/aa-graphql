@@ -1,4 +1,4 @@
-final woloxCI = Library('wolox-ci')
+final woloxCI = library('wolox-ci')
 
 node {
 
