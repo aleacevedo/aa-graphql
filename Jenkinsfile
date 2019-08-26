@@ -1,4 +1,4 @@
-final woloxCI = library('wolox-ci')
+@Library('wolox-ci') _
 
 node {
 
