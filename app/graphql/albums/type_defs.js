@@ -12,7 +12,7 @@ const rootTypes = gql`
 
 const customTypes = gql`
   type Album {
-    noId: ID!
+    id: ID!
     title: String!
     photos: [Photo!]!
   }
