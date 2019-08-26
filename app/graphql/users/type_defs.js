@@ -15,9 +15,8 @@ const customTypes = gql`
   type User {
     firstName: String! @deprecated(reason: "We join in name")
     lastName: String! @deprecated(reason: "We join in name")
-
+    name: String!
     email: String!
-    password: String!
     id: ID!
   }
 `;
