@@ -2,8 +2,10 @@ pipeline{
   agent any
   stages {
     stage('DB'){
-      sh 'echo "Create DB"'
-      sh 'echo "Migrates DB"'
+      stpes{
+        sh 'echo "Create DB"'
+        sh 'echo "Migrates DB"'
+      }
     }
     stage('Run'){
       steps{
@@ -12,7 +14,9 @@ pipeline{
       }
     }
     stage('Test'){
-      sh 'echo "npm test"'
+      steps{
+        sh 'echo "npm test"'
+      }
     }
   }
 }
